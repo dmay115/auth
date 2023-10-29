@@ -1,0 +1,8 @@
+blinker==1.4
+itsdangerous==0.24
+psycopg2-binary==2.9.9
+pycparser==2.19
+six==1.11.0
+typing_extensions==4.8.0
+Werkzeug==0.14.1
+WTForms==2.2.1

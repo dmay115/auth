@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 class="display-1">Login</h1>
+<p class="lead">
+    Login Below. Don't have an account? <a href="/register">Register here</a>
+</p>
+<div>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            <label for="{{ form.username.id }}">Username: </label>
+            {{ form.username() }}
+        </div>
+        <div>
+            <label for="{{ form.password.id }}">Password:</label>
+            {{ form.password() }}
+        </div>
+
+        <button class="btn btn-success" type="submit">Login</button>
+    </form>
+</div>
+{% endblock %}
